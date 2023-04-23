@@ -99,37 +99,37 @@ Relations and queries are constructed using Prolog's single data type, the term,
 
 Prolog's single data type is the term. Terms are:
 
-- atom
+  1. atom
  ```
       Example:   x, red, 'Taco', and 'some atom' 
  ```
   
-  - Numbers
+  2. Numbers
  ```
       Example:   int, float
   ```
   
-  - variables
+  3. variables
  ```
       Example:   string consisting of letters, numbers and underscore characters
   ```
   
-  -  compound term
+  4. compound term
  ```
       Example:   person_friends(zelda,[tom,jim])
  ```
  
 - **Clauses**
 
-There are two types of clauses: facts and rules
+There are two types of clauses: facts and rules.
 
-Clauses with empty bodies are called "facts". 
+1. Clauses with empty bodies are called "facts". 
  ```
       Example:   cat(tom).
  ```
 
 
-Clauses with bodies are called "rules". 
+2. Clauses with bodies are called "rules". 
  ```
       Example:   animal(X) :- cat(X).
  ```
