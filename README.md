@@ -1,6 +1,6 @@
 # Logic Progamming with Prolog
 
-## Intro to logic progamming
+## Introduction to logic progamming
 
 Logic progamming deals with relations rather than functions.
 
@@ -56,4 +56,81 @@ asks whether the triple `([a,b],[c,d],[a,b,c,d]) belongs to relation *append*.
             Answer: yes
 ```
 
-## Intro to **PROLOG**
+## **Variants/extensions of Logic Programming**
+
+Prolog
+
+Abductive logic programming
+
+Metalogic programming
+
+Constraint logic programming
+
+Concurrent logic programming
+
+Concurrent constraint logic programming
+
+Inductive logic programming
+
+Higher-order logic programming
+
+Linear logic programming
+
+Object-oriented logic programming
+
+Transaction logic programming
+
+## Introduction to **PROLOG**
+
+Prolog is a logic programming language associated with artificial intelligence and computational linguistics.
+
+It was in the following summer of 1972, that Kowalski, developed the procedural interpretation of implications. This dual declarative/procedural interpretation later became formalised in the Prolog notation
+ ```prolog
+        H :- B1, …, Bn..
+  ```
+
+It can be read/used both declaratively and procedurally.
+
+In Prolog, program logic is expressed in terms of relations, and a computation is initiated by running a query over these relations.
+
+Relations and queries are constructed using Prolog's single data type, the term, Relations are defined by clauses.
+
+- **The term**
+
+Prolog's single data type is the term. Terms are:
+
+- atom
+ ```
+      Example:   x, red, 'Taco', and 'some atom' 
+ ```
+  
+  - Numbers
+ ```
+      Example:   int, float
+  ```
+  
+  - variables
+ ```
+      Example:   string consisting of letters, numbers and underscore characters
+  ```
+  
+  -  compound term
+ ```
+      Example:   person_friends(zelda,[tom,jim])
+ ```
+ 
+- **Clauses**
+
+There are two types of clauses: facts and rules
+
+Clauses with empty bodies are called "facts". 
+ ```
+      Example:   cat(tom).
+ ```
+
+
+Clauses with bodies are called "rules". 
+ ```
+      Example:   animal(X) :- cat(X).
+ ```
+
