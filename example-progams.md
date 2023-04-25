@@ -157,7 +157,6 @@ father(X, Y).
 mother(X, Y).
 male(X).
 female(X).
-```
 
 ### Define relations based on the given facts
 
