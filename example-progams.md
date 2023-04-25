@@ -149,3 +149,22 @@ professor(X, C) :- teaches(X, C)
     Who were the children of Charles I?
               Query: parent(X,charles1). 
 ```
+
+## famoli.pl
+
+father(X, Y).
+mother(X, Y).
+male(X).
+female(X).
+
+### Define relations based on the given facts
+
+parent(X, Y) :- father(X, Y) ; mother(X, Y).
+sibling(X,Y) :- parent(X, Z), parent(Y, Z).
+sister(X, Y) :- female(X), female(Y), sibling(X, Y).
+grandson(X, Y) :- male(X), parent(X, Z), parent(Z, Y).
+first_cousin(X, Y) :- parent(X, W), sibling(W, Z), parent(Y, Z).
+descendant(X,Y) :- parent(Y, X).
+descendant(X,Y) :- parent(Y, Z), descendant(X, Z).
+
+### From the above rules, queries generate correct results
