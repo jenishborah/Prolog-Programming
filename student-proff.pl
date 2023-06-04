@@ -1,4 +1,4 @@
-// Facts
+
 studies(charlie, csc135).
 studies(olivia, csc135).
 studies(jack, csc131).  
@@ -10,6 +10,5 @@ teaches(collins, csc131).
 teaches(collins, csc171). 
 teaches(juniper, csc134).
 
-// Rules
 
 professor(X, Y) :- teaches(X, C), studies(Y, C).
